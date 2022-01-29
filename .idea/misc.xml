@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_main.xml" value="0.16085526315789472" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_main2.xml" value="0.23087431693989072" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_pomodoro.xml" value="0.18" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/time_spinner_row.xml" value="0.12" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/menu/menuitem.xml" value="0.23157894736842105" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/menu/navigartion_menu.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MotivationAppSample/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MotivationAppSample/app/src/main/res/layout/activity_search_sample.xml" value="0.264" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MotivationAppSample/app/src/main/res/menu/menuitem.xml" value="0.16" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MotivationAppSample/app/src/main/res/menu/navigartion_menu.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search_sample.xml" value="0.18" />
+        <entry key="app/src/main/res/menu/menuitem.xml" value="0.12006578947368421" />
+        <entry key="app/src/main/res/menu/navigartion_menu.xml" value="0.12006578947368421" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

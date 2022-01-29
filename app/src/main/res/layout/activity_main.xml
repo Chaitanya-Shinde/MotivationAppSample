@@ -1,0 +1,71 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/drawer"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/new_search_bar" />
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/dmsansbold"
+                android:hint="Search"
+                android:inputType="textAutoComplete"
+                android:minHeight="48dp"
+                android:scaleX="1"
+                android:translationX="30dp"
+                android:translationY="18dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btnquote"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:layout_marginHorizontal="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <ImageView
+                android:id="@+id/btnshorts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigartion_menu"
+        android:layout_gravity="start"
+        app:itemTextAppearance="@style/NewFontStyle"
+        app:itemTextColor="@color/whitee"
+        android:background="#30475E"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

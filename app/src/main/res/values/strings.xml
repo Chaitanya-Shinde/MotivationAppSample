@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MotivationAppSample</string>
+    <string name="nav_open"> Open </string>
+    <string name="nav_close"> Close </string>
+    <string-array name="time">
+
+
+        <item>25Mins - 5Mins</item>
+        <item>45Mins - 15Mins</item>
+    </string-array>
+
+
+</resources>
