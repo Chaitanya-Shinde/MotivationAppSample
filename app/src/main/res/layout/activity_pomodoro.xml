@@ -24,8 +24,7 @@
             android:layout_height="310dp"
             android:layout_gravity="center"
             android:translationY="-120dp"
-            app:srcCompat="@drawable/clockface"
-            />
+            app:srcCompat="@drawable/clock_face"/>
 
 
         <Spinner
@@ -40,20 +39,26 @@
             />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/start"
+            android:id="@+id/imageView3"
+            android:layout_width="137dp"
+            android:layout_height="63dp"
             android:layout_gravity="center"
-            android:translationY="190dp"
-            />
+            app:srcCompat="@drawable/pause_btn"
+            android:translationY="190dp"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/stop_btn"
+            android:layout_width="137dp"
+            android:layout_height="63dp"
             android:layout_gravity="center"
-            android:translationY="260dp"
-            />
+            android:src="@drawable/stop_btn"
+            android:translationY="260dp" />
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:src="@drawable/start_btn"
+            android:translationY="190dp" />
 
     </FrameLayout>
 </LinearLayout>

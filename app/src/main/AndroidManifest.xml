@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotivationAppSample">
         <activity
+            android:name=".Reminder"
+            android:exported="false" />
+        <activity
             android:name=".Pomodoro"
             android:exported="false" />
         <activity

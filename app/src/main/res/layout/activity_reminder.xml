@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reminder_bg"
+    android:orientation="vertical"
+    tools:context=".Reminder"
+    android:layout_gravity="center"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/addRem_btn"
+        android:layout_width="1227px"
+        android:layout_height="220px"
+        android:layout_gravity="center"
+        android:src="@drawable/add_btn"
+        android:translationY="-315dp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="1227px"
+        android:layout_height="620dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="true"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/task_bg" />
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</FrameLayout>
