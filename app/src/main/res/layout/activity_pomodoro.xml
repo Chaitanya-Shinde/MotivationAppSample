@@ -7,8 +7,6 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Pomodoro"
-
-
     >
 
     <FrameLayout
@@ -24,8 +22,31 @@
             android:layout_height="310dp"
             android:layout_gravity="center"
             android:translationY="-120dp"
-            app:srcCompat="@drawable/clock_face"/>
+            app:srcCompat="@drawable/clockface"
+            />
 
+        <TextView
+            android:id="@+id/timer"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="115dp"
+            android:textSize="65sp"
+            android:textColor="@color/whitee"
+            android:fontFamily="@font/dmsansbold"
+            />
+        <TextView
+            android:id="@+id/abtpomodoro"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="115dp"
+            android:text="What is Pomodoro?\nIt is a time management \nsystem in which you break \nyour workday into 25 min\n chunks seperated by 5 min\n breaks. These intervals are \nreferred to as pomodoros \n(Italian word for tomatoes)"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textColor="@color/whitee"
+            android:fontFamily="@font/dmsansbold"
+            />
 
         <Spinner
             android:id="@+id/spinner"
@@ -35,30 +56,56 @@
             android:entries="@array/time"
             android:spinnerMode="dropdown"
             android:translationY="70dp"
+            />
 
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:translationY="100dp"
+            android:textColor="@color/whitee"
+            android:fontFamily="@font/dmsansbold"
             />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/pause"
             android:layout_width="137dp"
             android:layout_height="63dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/pause_btn"
-            android:translationY="190dp"/>
+            android:src="@drawable/pause_btn"
+            android:translationY="190dp"
+            android:visibility="invisible"
+             />
+
 
         <ImageView
-            android:layout_width="137dp"
-            android:layout_height="63dp"
-            android:layout_gravity="center"
-            android:src="@drawable/stop_btn"
-            android:translationY="260dp" />
-
-        <ImageView
+            android:id="@+id/start"
             android:layout_width="137dp"
             android:layout_height="63dp"
             android:layout_gravity="center"
             android:src="@drawable/start_btn"
-            android:translationY="190dp" />
+            android:translationY="190dp"
+            />
+
+        <ImageView
+            android:id="@+id/resume"
+            android:layout_width="137dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:src="@drawable/resume_btn"
+            android:translationY="190dp"
+            />
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="137dp"
+            android:layout_height="63dp"
+            android:src="@drawable/stop_btn"
+            android:layout_gravity="center"
+            android:translationY="260dp"
+            />
 
     </FrameLayout>
 </LinearLayout>

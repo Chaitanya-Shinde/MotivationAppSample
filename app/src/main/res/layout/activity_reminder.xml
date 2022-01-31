@@ -9,6 +9,7 @@
     tools:context=".Reminder"
     android:layout_gravity="center"
 
+
     >
 
 
