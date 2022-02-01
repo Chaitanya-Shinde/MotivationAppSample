@@ -3,9 +3,9 @@
     <string name="nav_open"> Open </string>
     <string name="nav_close"> Close </string>
     <string-array name="time">
-        <item>Set the timer</item>
-        <item>Easy Mode</item>
-        <item>Hard Mode</item>
+        <item>Choose your workload</item>
+        <item>Light</item>
+        <item>Intense</item>
     </string-array>
 
 

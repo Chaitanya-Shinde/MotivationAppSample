@@ -20,13 +20,38 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     private ImageView imageView;
     private ImageView quotess, shorts;
-//    ImageButton
+    ImageView btnquote, btnshorts;
+    //    ImageButton
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnquote=findViewById(R.id.btnquote);
+        btnshorts=findViewById(R.id.btnshorts);
+        btnquote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Quotes.class);
+                startActivity(intent);
+
+
+            }
+
+
+        });
+        btnshorts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+
+
+        });
+
 
         //Navigation Drawer code
         drawerLayout =findViewById(R.id.drawer);
@@ -42,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Pomodoro.class);
+                Intent intent = new Intent(MainActivity.this, Reminder.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         switch (q){
             case 1:
                 quotess.setImageResource(R.drawable.quote1);
-            break;
+                break;
             case 2:
                 quotess.setImageResource(R.drawable.quote2);
                 break;

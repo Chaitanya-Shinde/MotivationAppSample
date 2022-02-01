@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.motivationappsample">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,11 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotivationAppSample">
         <activity
+            android:name=".Quotes"
+            android:exported="false" />
+        <activity
             android:name=".Reminder"
             android:exported="false" />
         <activity
             android:name=".Pomodoro"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Pomodoro"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SearchSample"
             android:exported="false"

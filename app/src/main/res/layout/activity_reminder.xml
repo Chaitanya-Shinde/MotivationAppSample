@@ -8,42 +8,198 @@
     android:orientation="vertical"
     tools:context=".Reminder"
     android:layout_gravity="center"
-
-
     >
 
-
-    <ImageView
-        android:id="@+id/addRem_btn"
-        android:layout_width="1227px"
-        android:layout_height="220px"
-        android:layout_gravity="center"
-        android:src="@drawable/add_btn"
-        android:translationY="-315dp"
-
-        />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="1227px"
-        android:layout_height="620dp"
+        android:id="@+id/remRecyclerView"
+        android:layout_width="368dp"
+        android:layout_height="649dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="5dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:nestedScrollingEnabled="true"
-
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
 
         >
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/task_bg" />
-
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+
+
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:layout_width="353dp"
+            android:layout_height="403dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/drawer"
+            android:translationY="10dp">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/newTaskText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#F5F5F5"
+            android:fontFamily="@font/dmsansbold"
+            android:hint="Enter title"
+            android:inputType="text"
+            android:minHeight="38dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorHint="#F5F5F5"
+            android:translationY="85dp"
+
+            >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/newTaskDescpt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:backgroundTint="#F5F5F5"
+            android:fontFamily="@font/dmsansbold"
+            android:hint="Enter description"
+            android:minHeight="38dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorHint="#F5F5F5"
+            android:translationY="128dp"
+            android:inputType="text"
+            >
+
+
+        </EditText>
+
+        <!--for date-->
+
+        <ImageView
+            android:id="@+id/set_rem"
+            android:layout_width="320dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/set_rem"
+            android:translationY="340dp"
+
+
+            >
+
+        </ImageView>
+
+        <Button
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#303442"
+            android:fontFamily="@font/dmsansbold"
+            android:includeFontPadding="false"
+            android:text="Select Date and Time"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:translationY="245dp">
+
+        </Button>
+
+
+        <LinearLayout
+
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:translationY="290dp"
+            android:translationX="50dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="center"
+                android:text="Day"
+                android:textColor="#F5F5F5"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansbold"
+                android:text="/"
+                android:textColor="#F5F5F5"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="center"
+                android:text="Month"
+                android:textColor="#F5F5F5"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansbold"
+                android:text="/"
+                android:textColor="#F5F5F5"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="center"
+                android:text="Year"
+                android:textColor="#F5F5F5"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+
+        <!--        <TextView-->
+        <!--        android:id="@+id/date_picker"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Select Date"-->
+        <!--        android:layout_gravity="center_horizontal"-->
+        <!--        android:fontFamily="@font/dmsansbold"-->
+        <!--        android:textColor="#F5F5F5"-->
+        <!--        />-->
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/addRem_btn"
+        android:layout_width="343dp"
+        android:layout_height="220px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/add_btn"
+
+        />
+
 
 
 </FrameLayout>

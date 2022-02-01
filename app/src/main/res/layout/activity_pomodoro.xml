@@ -25,6 +25,16 @@
             app:srcCompat="@drawable/clockface"
             />
 
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:translationY="-180dp"
+            android:visibility="invisible"
+            />
+
+
         <TextView
             android:id="@+id/timer"
             android:layout_height="wrap_content"
@@ -51,61 +61,74 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="wrap_content"
-            android:layout_height="85dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:entries="@array/time"
             android:spinnerMode="dropdown"
-            android:translationY="70dp"
+            android:translationY="60dp"
             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sets"
+            android:layout_gravity="center"
+            android:fontFamily="@font/dmsansbold"
+            android:textAlignment="center"
+            android:textColor="@color/whitee"
+            android:translationY="60dp"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            />
+
 
         <TextView
             android:id="@+id/mode"
             android:layout_width="wrap_content"
             android:layout_height="85dp"
             android:layout_gravity="center"
+            android:textAlignment="center"
             android:textSize="20sp"
-            android:translationY="100dp"
+            android:translationY="130dp"
             android:textColor="@color/whitee"
             android:fontFamily="@font/dmsansbold"
             />
 
         <ImageView
             android:id="@+id/pause"
-            android:layout_width="137dp"
-            android:layout_height="63dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/pause_btn"
+            android:src="@drawable/pause"
             android:translationY="190dp"
-            android:visibility="invisible"
-             />
-
-
-        <ImageView
-            android:id="@+id/start"
-            android:layout_width="137dp"
-            android:layout_height="63dp"
-            android:layout_gravity="center"
-            android:src="@drawable/start_btn"
-            android:translationY="190dp"
-            />
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/resume"
-            android:layout_width="137dp"
-            android:layout_height="63dp"
+            android:layout_width="234dp"
+            android:layout_height="57dp"
             android:layout_gravity="center"
             android:src="@drawable/resume_btn"
             android:translationY="190dp"
-            />
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/start"
+            android:translationY="190dp"
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/stop"
-            android:layout_width="137dp"
-            android:layout_height="63dp"
-            android:src="@drawable/stop_btn"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
+            android:src="@drawable/stop_btn"
             android:translationY="260dp"
-            />
+            android:visibility="invisible" />
 
     </FrameLayout>
 </LinearLayout>
