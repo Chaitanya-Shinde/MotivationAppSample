@@ -2,11 +2,19 @@
     <string name="app_name">MotivationAppSample</string>
     <string name="nav_open"> Open </string>
     <string name="nav_close"> Close </string>
+    <string name="select_date">Select Date</string>
     <string-array name="time">
         <item>Choose your workload</item>
         <item>Light</item>
         <item>Intense</item>
     </string-array>
+
+
+    <string name="desc_content">Vestibulum cursus lacinia tortor ac lacinia. In hac habitasse platea dictumst. Quisque turpis lorem, venenatis non tellus a, aliquam vulputate dolor. Morbi sodales feugiat turpis ac dignissim. Vivamus scelerisque pharetra lacus, eu accumsan lectus fringilla sed. Sed tempor faucibus finibus. Mauris feugiat sem at molestie ornare.</string>
+    <string name="desc_content2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel lacus lorem. Sed eu auctor ipsum. Morbi ut orci id urna scelerisque aliquet. Mauris rutrum arcu suscipit venenatis ultrices. Donec commodo porttitor libero, non ultrices eros ultrices vitae. Aenean ullamcorper turpis vel ligula fringilla, sit amet sagittis magna convallis.</string>
+    <string name="desc_content3">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</string>
+    <string name="select_time">Select Time</string>
+    <string name="report"></string>
 
 
 </resources>

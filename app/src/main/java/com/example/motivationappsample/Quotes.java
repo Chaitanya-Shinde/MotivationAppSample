@@ -21,6 +21,7 @@ public class Quotes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quotes);
+
         recyclerView=findViewById(R.id.rcprogram);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);

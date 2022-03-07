@@ -3,14 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/drawable/btn_border.xml" value="0.24177631578947367" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/drawable/img_border.xml" value="0.16282894736842105" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/drawable/img_gradient.xml" value="0.18" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/drawable/settings_border.xml" value="0.24177631578947367" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_main2.xml" value="0.23087431693989072" />
-        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_pomodoro.xml" value="0.33" />
-        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_quotes.xml" value="0.23157894736842105" />
-        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_reminder.xml" value="0.25" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_pomodoro.xml" value="0.2" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_quotes.xml" value="0.16" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_reminder.xml" value="0.31726002703920686" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_report_problem.xml" value="0.18" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_search_sample.xml" value="0.2" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/custom_spinner_dropdown_item.xml" value="0.1" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/custom_spinner_item.xml" value="0.1" />
         <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/homepageitems.xml" value="0.23157894736842105" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/horizontalstories.xml" value="0.22" />
         <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/new_rem.xml" value="0.18" />
-        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/rem_layout.xml" value="0.5627214741318214" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/rem_layout.xml" value="0.33" />
+        <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/story_card.xml" value="0.2" />
         <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/test.xml" value="0.12894736842105264" />
         <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/layout/time_spinner_row.xml" value="0.12" />
         <entry key="..\:/Chaitanya/Motivation app/Android Studio Projects/MotivationAppSample/app/src/main/res/menu/menuitem.xml" value="0.23157894736842105" />
@@ -31,12 +42,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.15" />
-      </ProjectState>
-    </option>
   </component>
 </project>

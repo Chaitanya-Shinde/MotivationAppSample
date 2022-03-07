@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Testing header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="25dp">
+
+                    <ImageView
+                        android:id="@+id/mainImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/quote1" />
+
+                    <TextView
+                        android:id="@+id/description_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="5"
+                        android:text="@string/desc_content" />
+
+                    <ImageButton
+                        android:id="@+id/show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_text"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/resume_btn"
+                        android:clickable="true" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/description_text"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/show"
+                        android:background="#000" />
+
+                    <ImageButton
+                        android:id="@+id/hide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_text"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/pause_btn"
+                        android:clickable="true"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/mainImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/quote2" />
+
+                    <TextView
+                        android:id="@+id/description_text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="5"
+                        android:text="@string/desc_content2" />
+
+                    <ImageButton
+                        android:id="@+id/show2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_text2"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/selectdate_btn"
+                        android:clickable="true" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/description_text2"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/show"
+                        android:background="#000" />
+
+                    <ImageButton
+                        android:id="@+id/hide2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_btn"
+                        android:layout_below="@+id/description_text2"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mainImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/quote4" />
+
+                    <TextView
+                        android:id="@+id/description_text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="5"
+                        android:text="@string/desc_content3" />
+
+                    <ImageButton
+                        android:id="@+id/show3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_text3"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/pause_btn"
+                        android:clickable="true" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/description_text3"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/show"
+                        android:background="#000" />
+
+                    <ImageButton
+                        android:id="@+id/hide3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/start_btn"
+                        android:layout_below="@+id/description_text3"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -12,11 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotivationAppSample">
         <activity
+            android:name=".ReportProblem"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".Quotes"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Reminder"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Pomodoro"
             android:exported="false"

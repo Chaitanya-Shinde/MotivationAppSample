@@ -61,11 +61,29 @@
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:id="@+id/navView"
         app:menu="@menu/navigartion_menu"
         android:layout_gravity="start"
         app:itemTextAppearance="@style/NewFontStyle"
         app:itemTextColor="@color/whitee"
         android:background="#30475E"
+
+
         />
+
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:foregroundGravity="center"-->
+<!--        android:overScrollMode="never"-->
+
+<!--        >-->
+
+
+<!--    </androidx.viewpager.widget.ViewPager>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>

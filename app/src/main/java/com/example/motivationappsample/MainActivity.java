@@ -3,21 +3,50 @@ package com.example.motivationappsample;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.Spinner;
 
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+import com.example.motivationappsample.Adapter.S_BannerAdapter;
+import com.example.motivationappsample.Model.StoriesBanner;
+import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Random;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    //UI Views
+    CardView cardView;
+    ImageView bannerIMG;
+    TextView titleTV;
+    TextView descTV;
+    private ViewPager viewPager;
+    private ArrayList<StoriesBanner> storiesBannerArrayList;
+    private S_BannerAdapter s_bannerAdapter;
+
+    NavigationView navigationView;
+    private View item;
     private ImageView imageView;
     private ImageView quotess, shorts;
     ImageView btnquote, btnshorts;
@@ -28,13 +57,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initNavigationDrawer();
+
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor2 = preferences.edit();
+        if(preferences.getBoolean("DEF_VOICE_ASSIST",true)){
+            editor2.putBoolean("VOICE ASSIST",true);
+            editor2.apply();
+        }
+
+        if (preferences.getBoolean("DEF_POMO_VOLUME", true)){
+            editor2.putFloat("POMO_VOLUME", 50f);
+            editor2.apply();
+        }
+
 
         btnquote=findViewById(R.id.btnquote);
         btnshorts=findViewById(R.id.btnshorts);
         btnquote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Quotes.class);
+                Intent intent = new Intent(MainActivity.this, Quotes.class);
                 startActivity(intent);
 
 
@@ -42,10 +86,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
         btnshorts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
 
             }
 
@@ -67,8 +111,9 @@ public class MainActivity extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Reminder.class);
+                Intent intent = new Intent(MainActivity.this, Pomodoro.class);
                 startActivity(intent);
+                intent .putExtra("keyvalue", (Parcelable) quotess);
             }
         });
 
@@ -109,6 +154,8 @@ public class MainActivity extends AppCompatActivity {
                 quotess.setImageResource(R.drawable.quote10);
                 break;
         }
+
+
         shorts = findViewById(R.id.btnshorts);
         int s = r.nextInt(10);
         switch(s){
@@ -148,6 +195,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
         if(actionBarDrawerToggle.onOptionsItemSelected(item)){
@@ -162,6 +210,48 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menuitem,menu);
         return true;
+    }
+
+
+    public void initNavigationDrawer() {
+
+        navigationView = (NavigationView) findViewById(R.id.navView);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                int id = menuItem.getItemId();
+                switch (id) {
+                    case 0:
+                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        Toast.makeText(MainActivity.this, "favourties", Toast.LENGTH_SHORT).show();
+                        Intent intent1 = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case 2:
+                        Intent intent2 = new Intent(MainActivity.this, Reminder.class);
+                        startActivity(intent2);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(MainActivity.this, Pomodoro.class);
+                        startActivity(intent3);
+                        break;
+                    case 4:
+                        Intent intent4 = new Intent(MainActivity.this, Quotes.class);
+                        startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(MainActivity.this, Settings.class);
+                        startActivity(intent5);
+                        break;
+                    default:
+                        break;
+                }
+                return true;
+            }
+        });
     }
 
 

@@ -16,6 +16,46 @@
         android:layout_gravity="center"
         >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/freezerText"
+            android:fontFamily="@font/dmsansbold"
+            android:textColor="@color/whitee"
+            android:text="0"
+            android:textSize="20sp"
+            android:translationY="52dp"
+            android:translationX="65dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/freezer"
+            android:src="@drawable/freezer"
+            android:translationY="52dp"
+            android:translationX="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/streakText"
+            android:fontFamily="@font/dmsansbold"
+            android:textColor="@color/whitee"
+            android:text="0"
+            android:textSize="20sp"
+            android:translationY="18dp"
+            android:translationX="65dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/streak"
+            android:src="@drawable/streak1"
+            android:translationY="15dp"
+            android:translationX="25dp"/>
+
+
+
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="308dp"
@@ -50,9 +90,10 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="115dp"
-            android:text="What is Pomodoro?\nIt is a time management \nsystem in which you break \nyour workday into 25 min\n chunks seperated by 5 min\n breaks. These intervals are \nreferred to as pomodoros \n(Italian word for tomatoes)"
+            android:layout_marginBottom="120dp"
+            android:text="What is Pomodoro?\n\nIt is a time management \nsystem in which you break \nyour workday into 25 minute \nchunks seperated by 5 minute \nbreaks. These intervals are \nreferred to as pomodoros \n(Italian word for tomatoes)"
             android:textAlignment="center"
+            android:visibility="visible"
             android:textSize="13sp"
             android:textColor="@color/whitee"
             android:fontFamily="@font/dmsansbold"
@@ -65,8 +106,7 @@
             android:layout_gravity="center"
             android:entries="@array/time"
             android:spinnerMode="dropdown"
-            android:translationY="60dp"
-            />
+            android:translationY="60dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -77,7 +117,7 @@
             android:textAlignment="center"
             android:textColor="@color/whitee"
             android:translationY="60dp"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:visibility="invisible"
             />
 
@@ -88,7 +128,7 @@
             android:layout_height="85dp"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:translationY="130dp"
             android:textColor="@color/whitee"
             android:fontFamily="@font/dmsansbold"
@@ -98,37 +138,40 @@
             android:id="@+id/pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:src="@drawable/pause"
+            android:visibility="invisible"
+            android:layout_gravity="center"
             android:translationY="190dp"
-            android:visibility="invisible" />
+            />
 
         <ImageView
             android:id="@+id/resume"
-            android:layout_width="234dp"
-            android:layout_height="57dp"
-            android:layout_gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
             android:src="@drawable/resume_btn"
+            android:layout_gravity="center"
             android:translationY="190dp"
-            android:visibility="invisible" />
+            android:visibility="invisible"/>
 
         <ImageView
             android:id="@+id/start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:src="@drawable/start"
+            android:layout_gravity="center"
             android:translationY="190dp"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            />
 
         <ImageView
             android:id="@+id/stop"
-            android:layout_width="170dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
             android:src="@drawable/stop_btn"
+            android:layout_gravity="center"
             android:translationY="260dp"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            />
 
     </FrameLayout>
 </LinearLayout>
